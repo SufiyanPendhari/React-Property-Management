@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+body{
+  font-family: Helvetica;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+.Heading{
+  padding: 15px 40px 15px 40px;
+  margin-bottom: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+align-items: center;
+background-color: #008080	;
+}
+
+.title{
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Helvetica;
   color: white;
+  text-align: start;
+  flex:7
 }
 
-.App-link {
-  color: #61dafb;
+.oc-button{
+  flex: 1;
+  text-align:end ;
+ margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Tile Component */
+.prop-title{
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
 }
+
+.Tile {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #eee;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.Container{
+  padding: 10px 0px 10px 20px;
+  color: #333;
+  font-weight: 500;
+}
+
+.test{
+  font-weight: 700;
+  color: #008080;
+  font-family: Helvetica;
+}
+
+.ColumnOne {
+  flex: 3; 
+}
+
+.ColumnTwo {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  }
+
+.Button-Container{
+  padding: 10px 15px 10px 0px
+}
+
+/* Form */
+.Form {
+  border: 1px solid #eee;
+  background-color: #eee;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* DataEntry */
+.DataEntry{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.DataEntry > div  {
+  padding: 10px;
+}
+
+.f-title{
+  flex: 2;
+  }
+
+label{
+  font-weight: 600;
+  color: #333;
+}
+
+.f-desc{
+  flex:5;
+}
+
+input{
+  border: 2px solid rgb(194, 191, 191);
+  border-radius: 5px;
+  height: 30px;
+}
+
+textarea{
+  border: 2px solid rgb(194, 191, 191);
+  border-radius: 5px;
+}
+
+.DataEntry > div > input , textarea{
+  padding: 5px;
+  flex: 4;
+  width: 100%;
+}
+/* Biutton */
+.button-ac{
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  margin: auto;
+}
+
